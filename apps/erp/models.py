@@ -5,7 +5,7 @@ from .choices import *
 class Usuario(models.Model):
     primer_nombre = models.TextField(verbose_name='Primer Nombre')
     segundo_nombre = models.TextField(verbose_name='Segundo Nombre')
-    primer_apellido = models.TextField(verbose_name='Primer Apellido')
+    primer_apellido = models.TextField(verbose_name='Primer Apellido') 
     segundo_apellido = models.TextField(verbose_name='Segundo Apellido')
     edad = models.PositiveIntegerField(verbose_name='Edad', null=True, blank=True)
     genero = models.TextField(choices=GENERO_CHOICES, verbose_name='Genero')

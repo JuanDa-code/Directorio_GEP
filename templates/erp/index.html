@@ -1,0 +1,9 @@
+{% extends './../bases/base.html' %}
+
+{% block content %}
+
+    {% for user in usuarios %}
+        <li>{{ user.primer_nombre }} // {{ user.primer_apellido }}</li>
+    {% endfor %}
+
+{% endblock content %}
